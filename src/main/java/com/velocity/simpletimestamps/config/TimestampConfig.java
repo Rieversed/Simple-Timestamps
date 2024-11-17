@@ -20,6 +20,7 @@ public class TimestampConfig {
     private Formatting timestampColor = Formatting.GRAY;
     private boolean showSeconds = true;
     private boolean use24HourFormat = true;
+    private boolean colorWholeMessage = false;
     
     public static TimestampConfig INSTANCE = load();
     
@@ -47,6 +48,15 @@ public class TimestampConfig {
     
     public void setUse24HourFormat(boolean use24HourFormat) {
         this.use24HourFormat = use24HourFormat;
+        save();
+    }
+
+    public boolean isColorWholeMessage() {
+        return colorWholeMessage;
+    }
+
+    public void setColorWholeMessage(boolean colorWholeMessage) {
+        this.colorWholeMessage = colorWholeMessage;
         save();
     }
     

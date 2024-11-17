@@ -12,7 +12,7 @@
 	"icon": "assets/simpletimestamps/icon.png",
 	"environment": "client",
 	"entrypoints": {
-		"main": [
+		"client": [
 			"com.velocity.simpletimestamps.SimpleTimestamps"
 		]
 	},
