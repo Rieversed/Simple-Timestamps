@@ -1,32 +1,26 @@
 {
 	"schemaVersion": 1,
-	"id": "simplets",
-	"version": "${version}",
+	"id": "simpletimestamps",
+	"version": "1.0.0",
 	"name": "Simple Timestamps",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Adds timestamps to chat messages",
 	"authors": [
-		"Me!"
+		"Your Name"
 	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/simplets/icon.png",
-	"environment": "*",
+	"contact": {},
+	"license": "MIT",
+	"icon": "assets/simpletimestamps/icon.png",
+	"environment": "client",
 	"entrypoints": {
 		"main": [
 			"com.velocity.simpletimestamps.SimpleTimestamps"
-		],
-		"fabric-datagen": [
-			"com.velocity.simpletimestamps.SimpleTimestampsDataGenerator"
 		]
 	},
 	"mixins": [
-		"simplets.mixins.json"
+		"simpletimestamps.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.16.9",
+		"fabricloader": ">=0.14.21",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*"
